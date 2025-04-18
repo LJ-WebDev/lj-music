@@ -1,0 +1,256 @@
+@font-face {
+    font-family: Anta;
+    src: url(../fonts/Anta-Regular.ttf);
+}
+
+@font-face {
+    font-family: Alegreya;
+    src: url(../fonts/Alegreya-VariableFont_wght.ttf);
+}
+
+:root {
+    --color-1: #000;
+    --color-2: #fff;
+    --color-3: #1e1e1e;
+    --color-4: #0050ff;
+    --color-5: #0dfa00;
+    --color-6: #c5c5d5;
+    --color-apple: #eb2238;
+    --color-spotify: #1ed760;
+    --color-tidal: #000;
+    --color-tidal-2: #fff;
+    --color-amazon: #3cbed9;
+    --color-youtube: #fec8c8;
+    --color-youtube-music: #fd1d42;
+    --color-soundcloud: #ff5500;
+    --color-deezer: #8400ff;
+    --color-boomplay: #005fcc;
+    --color-iheart: #e70045;
+    --color-jiosaavn: #1eccb0;
+}
+
+body {
+    font-family: Alegreya;
+    min-height: 100vh;
+    background: url('../images/bg-img.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body * {
+    transition: 0.3s ease-in-out;
+}
+
+/* 
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+p {}
+
+*/
+
+a {
+    cursor: pointer;
+}
+
+/*
+
+ul {}
+
+li {}
+
+*/
+
+header {
+    font-family: Anta;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    height: 0;
+    padding: 5px 20px;
+    width: 0;
+    margin: 50px auto;
+    border-radius: 15px;
+    background-color: var(--color-6);
+    transition-duration: 1s;
+    position: sticky;
+    top: 15px;
+    z-index: 100;
+}
+
+header > * {
+    margin: 0 25px;
+}
+
+header div, nav, a {
+    justify-content: space-between;
+}
+
+.header-main-logo a:hover {
+    padding-left: 20px;
+}
+
+header nav a:hover {
+    font-size: 2rem;
+    color: var(--color-4);
+    text-shadow: 0 0 0.5em var(--color-4);
+}
+
+header * {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition-duration: 0.3s;
+}
+
+.header-main-logo {
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.header-main-nav{
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.header-main-external-links {
+    opacity: 0;
+    transition-duration: 1s
+}
+
+.header-main-nav ul li {
+    padding: 5px 10px;
+}
+
+.header-main-external-links ul li {
+    height: 65%;
+    padding: 5px;
+}
+
+/*
+.header-main-external-links img:hover {
+    border-radius: 100%;
+}
+
+.header-main-external-links li:hover {
+    margin-bottom: 15px;
+    transition-delay: 0s;
+}
+*/
+/* 
+main {
+    flex-direction: row;
+}
+*/
+
+
+/* Footer */
+
+footer {
+    font-family: Anta;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 5px 20px;
+    width: calc(100% - 80px);
+    margin: 15px auto;
+    border-radius: 15px;
+    color: var(--color-2);
+    background-color: #081018;
+    transition: 0.5s ease-in-out;
+}
+
+footer * {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a {
+    padding: 5px;
+    text-align: left;
+}
+
+footer a:hover {
+    color: var(--color-5);
+    text-shadow: 0 0 0.5em var(--color-5);
+    transition: 0.2s ease-in-out;
+}
+
+.footer-mail-icon {
+    margin-right: 10px;
+}
+
+.footer-streaming-platforms ul {
+    flex-direction: column;
+}
+
+.footer-streaming-platforms a {
+    padding: 2px;
+}
+
+/* Footer streaming platform link hover effects */
+.footer-apple-music:hover {
+    color: var(--color-apple);
+    text-shadow: 0 0 0.5em var(--color-apple), 0 0 1em var(--color-apple);
+}
+
+.footer-spotify:hover {
+    color: var(--color-spotify);
+    text-shadow: 0 0 0.5em var(--color-spotify), 0 0 1em var(--color-spotify);
+}
+
+.footer-tidal:hover {
+    color: var(--color-tidal);
+    text-shadow: 0 0 0.5em var(--color-tidal-2), 0 0 1em var(--color-tidal-2);
+}
+
+.footer-amazon-music:hover {
+    color: var(--color-amazon);
+    text-shadow: 0 0 0.5em var(--color-amazon), 0 0 1em var(--color-amazon);
+}
+
+.footer-youtube:hover {
+    color: var(--color-youtube);
+    text-shadow: 0 0 0.5em var(--color-youtube), 0 0 1em var(--color-youtube);
+}
+
+.footer-youtube-music:hover {
+    color: var(--color-youtube-music);
+    text-shadow: 0 0 0.5em var(--color-youtube-music), 0 0 1em var(--color-youtube-music);
+}
+
+.footer-soundcloud:hover {
+    color: var(--color-soundcloud);
+    text-shadow: 0 0 0.5em var(--color-soundcloud), 0 0 1em var(--color-soundcloud);
+}
+
+.footer-deezer:hover {
+    color: var(--color-deezer);
+    text-shadow: 0 0 0.5em var(--color-deezer), 0 0 1em var(--color-deezer);
+}
+
+.footer-boomplay:hover {
+    color: var(--color-boomplay);
+    text-shadow: 0 0 0.5em var(--color-boomplay), 0 0 1em var(--color-boomplay);
+}
+
+.footer-iheart:hover {
+    color: var(--color-iheart);
+    text-shadow: 0 0 0.5em var(--color-iheart), 0 0 1em var(--color-iheart);
+}
+
+.footer-jiosaavn:hover {
+    color: var(--color-jiosaavn);
+    text-shadow: 0 0 0.5em var(--color-jiosaavn), 0 0 1em var(--color-jiosaavn);
+}
