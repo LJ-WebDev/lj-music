@@ -31,6 +31,10 @@ section img {
   min-width: fit-content;
 }
 
+.column-2 ul {
+  list-style: number;
+}
+
 .column-3 {
   flex-basis: 15%;
   padding: 10px 20px 0 0;
@@ -42,18 +46,18 @@ section img {
   width: 50px;
 }
 
-.top-track-1 {
+.glass-breaker {
   background: linear-gradient(#a89a00ff, #3e3400ff);
 }
 
-.top-track-1 .column-1 img {
+.glass-breaker .column-1 img:hover {
   box-shadow: 0 0 30px #bfbb74;
 }
 
-.top-track-2 {
+.rising-from-below {
   background: linear-gradient(#383838ff, #353535ff);
 }
 
-.top-track-2 .column-1 img {
+.rising-from-below .column-1 img:hover {
   box-shadow: 0 0 30px #494e4f;
 }
