@@ -2,8 +2,8 @@ window.onload = function () {
   const header = document.querySelector('header');
 
   header.style.width = '100%';
-  header.style.height = '80px';
-  header.style.margin = '15px auto';
+  header.style.height = '7rem';
+  header.style.margin = '1.5rem auto';
   header.style.opacity = '1';
 
   setTimeout(function () {

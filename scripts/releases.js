@@ -13,15 +13,15 @@ releases.forEach((release) => {
   });
   releasesHTML += `
     <section class="${release.className}">
-      <a href="../releases/${release.title}.html" class="js-release-link">
+      <a href="/releases/${release.title}.html" class="js-release-link">
           <div class="column-1">
-            <a href="../releases/${release.className}.html"><img src="${release.img}" /></a>
+            <a href="/releases/${release.className}.html"><img src="${release.img}" /></a>
           </div>
           <div class="column-2">
-            <h2 class="release-title">${release.title}</h2>
-            <p class="release-date">${release.releaseDate}</p>
+            <h2 class="release-title"><a href="${release.ytLinkAlbum}" target="_blank">${release.title}</a></h2>
+            <p class="release-date-and-type">${release.releaseType} - ${release.releaseDate}</p>
             <p class="description">${release.description}</p>
-            <ul class="js-tracks">
+            <ul class="tracks">
               ${tracksHTML}
             </ul>
           </div>
@@ -31,9 +31,9 @@ releases.forEach((release) => {
               target="_blank"
               title="Open Album on YouTube"
               ><img src="images/icons/youtube-black-icon-512.png"
-            /></a>
+            ></a>
           </div>
-      </a>
+        </a>
       </section>
   `;
 });
