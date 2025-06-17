@@ -1,0 +1,44 @@
+.glass-breaker {
+  background: linear-gradient(#fbed30, #110f0c);
+}
+
+.rising-from-below {
+  background: linear-gradient(#6d6d6d, #1a1a1a);
+}
+
+.jingle-bells {
+  background: linear-gradient(#b1bdbe, #464c52);
+}
+
+.the-path {
+  background: linear-gradient(#205d65, #093220);
+}
+
+.motivator-tension {
+  background: linear-gradient(#980e2d, #240000);
+}
+
+.care-free {
+  background: linear-gradient(#7788a1, #011a44);
+}
+
+main {
+  justify-content: center;
+  height: 100%;
+}
+
+.cover-img {
+  width: 25%;
+}
+
+section {
+  box-shadow: 1.4rem 1.4rem 0.5rem #000;
+  display: flex;
+  margin: 1.5rem 1rem;
+  flex: 1 1 20%;
+  max-width: 80%;
+  min-width: 635px;
+  border-radius: 5px;
+  margin-top: 50px;
+  height: 100%;
+}

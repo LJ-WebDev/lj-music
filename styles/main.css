@@ -31,12 +31,14 @@
 
 html {
   font-size: 62.5%;
+  min-height: 100vh;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: Alegreya;
   font-size: 1.6rem;
-  min-height: 100vh;
   /* background: url('../images/bg-img.jpg'); */
   background-size: cover;
   background-attachment: fixed;
@@ -45,6 +47,7 @@ body {
   background-color: var(--color-3);
   width: calc(100% - 80px);
   margin: auto;
+  min-height: 100vh;
 }
 
 body * {
@@ -55,7 +58,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-family: Anta;
 }
 
@@ -79,7 +82,7 @@ li {}
 
 header {
   font-family: Anta;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -123,9 +126,9 @@ header nav ul li a {
 }
 
 header nav a:hover {
-  font-size: 3rem;
-  color: var(--color-4);
-  text-shadow: 0 0 0.5em var(--color-4);
+  font-size: 3.6rem;
+  color: var(--color-3);
+  text-shadow: 0.2rem 0.2rem 0.5rem var(--color-3);
   transition-duration: 0.3s;
 }
 
@@ -186,6 +189,11 @@ main {
 }
 */
 
+main {
+  display: flex;
+  flex: 1 0 auto;
+}
+
 /* Footer */
 
 footer {
@@ -201,6 +209,7 @@ footer {
   color: var(--color-2);
   background-color: #081018;
   transition: 0.5s ease-in-out;
+  clear: both;
 }
 
 footer * {
